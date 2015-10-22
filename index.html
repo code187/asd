@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
+		<link href="css/mobile.css" rel="stylesheet" type="text/css">
+		<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
+		<meta charset="utf-8">
+        <title>ASD Scaning app</title>
+    </head>
+    <body>
+	<div data-role="page" data-theme="b" id="callAjaxPage">
+		<div data-role="header">
+            <p>ASD Online Marketing</p>
+        </div>
+		<div data-role="content">
+			<div class="app">
+				<img src="img/logo.png" />
+				<form name="loginform" id="loginform" action="http://ofir.hr/asd/wp-login.php" method="post">
+					<p>
+						<label for="user_login">Korisničko ime<br />
+						<input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
+					</p>
+					<p>
+						<label for="user_pass">Lozinka<br />
+						<input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+					</p>
+						
+					<p class="submit">
+						<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Prijava" />
+						<input type="hidden" name="redirect_to" value="http://ofir.hr/asd/scan/druga.html" />
+						<input type="hidden" name="testcookie" value="1" />
+					</p>
+				</form>
+				<div id="myDate"></div>
+			</div>
+		</div>
+		<div data-role="footer">
+             <p>&reg; Sva prava pridržana <a href="http://ofir.hr/">Ofir d.o.o</a></p>
+        </div>
+	</div>
+	
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        
+        <script>
+
+$("#btnLogin").click(function()
+{
+    $( "#myDate" ).text( "Reached Here" );
+  $.ajax({
+url:"https://myurl.com/api-file.php",
+type:"GET",
+dataType:"json",
+data:{username:"username",password:"password"},
+ContentType:"application/json",
+success:function(response)
+{
+  alert(JSON.stringify(response));
+},
+error: function(error)
+{
+  alert(JSON.stringify(error));
+}
+})
+});
+
+  </script>
+
+    </body>
+</html>
