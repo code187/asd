@@ -3,7 +3,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css" />
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
-		
+		<link href="css/mobile.css" rel="stylesheet" type="text/css">
 		<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
 		<meta charset="utf-8">
@@ -16,7 +16,7 @@
         </div>
 		<div data-role="content">
 			<div class="app">
-				<img src="http://ofir.hr/asd/scan/img/logo.png" />
+				<img src="img/logo.png" />
 				<form name="loginform" id="loginform" action="http://ofir.hr/asd/wp-login.php" method="post">
 					<p>
 						<label for="user_login">Korisničko ime<br />
@@ -29,7 +29,7 @@
 						
 					<p class="submit">
 						<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Prijava" />
-						<input type="hidden" name="redirect_to" value="http://ofir.hr/asd/scan/druga.html" />
+						<input type="hidden" name="redirect_to" value="http://www.ofir.hr/asd/scan/druga.html" />
 						<input type="hidden" name="testcookie" value="1" />
 					</p>
 				</form>
@@ -50,7 +50,7 @@ $("#btnLogin").click(function()
 {
     $( "#myDate" ).text( "Reached Here" );
   $.ajax({
-url:"https://myurl.com/api-file.php",
+url:"https://ofir.hr/asd/wp-login.php",
 type:"GET",
 dataType:"json",
 data:{username:"username",password:"password"},
