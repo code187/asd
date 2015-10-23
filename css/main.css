@@ -119,7 +119,10 @@
 #loginform > p.submit > div > span {
 	color:#3366bc;
 }
-
+#callAjaxPage > div.ui-content {
+	position: absolute;
+    top: 20%;
+}
 input {
 	margin-bottom:5px;
 	margin-top:5px;
