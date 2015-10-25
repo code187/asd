@@ -51,8 +51,8 @@ var app = {
 			
 			$.post("http://www.ofir.hr/asd/provjera.php", {data:check}, function(results){
   // the output of the response is now handled via a variable call 'results'
-  document.getElementById("info").innerHTML = result.text;
-            console.log(result);
+  document.getElementById("info").innerHTML = results.text;
+            console.log(results);
 });
 			/*
             if (args.format == "QR_CODE") {
