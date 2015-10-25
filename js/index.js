@@ -52,7 +52,19 @@ var app = {
                 "cancelled: " + result.cancelled + "\n");
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
-            /*
+            
+			var provjera = result.text.serialize();
+  
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost/asd/provjera.php",
+                    cache: false,
+                    data: provjera,
+                    success: onSuccess,
+                    error: onError
+                });
+			alert ("proizvod", data);
+			/*
             if (args.format == "QR_CODE") {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
             }

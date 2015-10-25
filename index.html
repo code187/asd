@@ -16,7 +16,7 @@
         {
            data = $.trim(data);
           // $("#notification").html(data);
-		   sessionStorage.setItem("ID", data);
+		   sessionStorage.setItem("x", data);
 		
 	
 if(isNaN(data)){
@@ -38,7 +38,7 @@ if(isNaN(data)){
   
                 $.ajax({
                     type: "POST",
-                    url: "http://www.ofir.hr/asd/callajax.php",
+                    url: "http://localhost/asd/callajax.php",
                     cache: false,
                     data: formData,
                     success: onSuccess,
