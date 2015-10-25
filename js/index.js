@@ -54,8 +54,9 @@ var app = {
                 "cancelled: " + result.cancelled + "\n");
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
-            
-			$.post("http://www.ofir.hr/asd/provjera.php", {data:result.text}, function(results){
+            var check = result.text;
+			alert (check);
+			$.post("http://www.ofir.hr/asd/provjera.php", {data:check}, function(results){
   // the output of the response is now handled via a variable call 'results'
   alert(results);
 });
