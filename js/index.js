@@ -57,7 +57,7 @@ var app = {
   
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost/asd/provjera.php",
+                    url: "http://www.ofir.hr/asd/provjera.php",
                     cache: false,
                     data: provjera,
                     success: onSuccess,
