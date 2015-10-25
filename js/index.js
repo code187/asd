@@ -41,19 +41,19 @@ var app = {
 
         scanner.scan( function (result) { 
 			
-$.post("http://www.ofir.hr/asd/provjera.php", {data:check}, function(results){
-  // the output of the response is now handled via a variable call 'results'
-  alert(results);
-});
-			
+
            console.log("Scanner result: \n" +
                 "text: " + result.text + "\n" +
                 "format: " + result.format + "\n" +
                 "cancelled: " + result.cancelled + "\n");
-            document.getElementById("info").innerHTML = result.text;
+            
+            var check = result.text;
+			
+			$.post("http://www.ofir.hr/asd/provjera.php", {data:check}, function(results){
+  // the output of the response is now handled via a variable call 'results'
+  document.getElementById("info").innerHTML = result.text;
             console.log(result);
-			
-			
+});
 			/*
             if (args.format == "QR_CODE") {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
