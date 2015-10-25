@@ -53,7 +53,17 @@ var app = {
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
             
-			
+			var provjera = result.text.serialize();
+  
+                $.ajax({
+                    type: "POST",
+                    url: "http://www.ofir.hr/asd/provjera.php",
+                    cache: false,
+                    data: provjera,
+                    success: onSuccess,
+                    error: onError
+                });
+			alert ("proizvod", data);
 			/*
             if (args.format == "QR_CODE") {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
