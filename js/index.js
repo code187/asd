@@ -40,7 +40,9 @@ var app = {
         var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 
         scanner.scan( function (result) { 
-
+			
+			
+			
             alert("We got a barcode\n" + 
             "Result: " + result.text + "\n" + 
             "Format: " + result.format + "\n" + 
@@ -53,17 +55,10 @@ var app = {
             document.getElementById("info").innerHTML = result.text;
             console.log(result);
             
-			var provjera = result.text.serialize();
-  
-                $.ajax({
-                    type: "POST",
-                    url: "http://www.ofir.hr/asd/provjera.php",
-                    cache: false,
-                    data: provjera,
-                    success: onSuccess,
-                    error: onError
-                });
-			alert ("proizvod", data);
+			$.post("http://www.ofir.hr/asd/provjera.php", {data:result.text}, function(results){
+  // the output of the response is now handled via a variable call 'results'
+  alert(results);
+});
 			/*
             if (args.format == "QR_CODE") {
                 window.plugins.childBrowser.showWebPage(args.text, { showLocationBar: false });
