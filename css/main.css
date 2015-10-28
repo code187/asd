@@ -20,8 +20,9 @@
 /******** BUTTON *********/
 
 #druga .box{
-  width:100px;
-  height:100px;
+	min-width: 100px;
+    min-height: 217px;
+    width: 50%;
   border-top:2px solid #fff;
   border-radius:50%;
   margin:50px auto 50px;
@@ -81,7 +82,7 @@
   width:15px;
   border-radius:50%;
   background: linear-gradient(#AEADAA,#BAB7AE);
-  margin:42px auto;
+  margin:95px auto;
 }
 
 
@@ -129,4 +130,21 @@ input {
     position: absolute;
     top: 0;
     left: 0;
+}
+#callAjaxForm {
+	width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+#callAjaxForm > div {
+	height: 100%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+#druga > div.ui-content > div > img {
+	max-width: 70%;
+    width: 50%;
 }
