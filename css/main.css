@@ -59,6 +59,7 @@
   
   box-shadow:  0 0 0 0 #BBB7AE;
 }
+
 #druga .box:before{
 	content:" ";
 	display:block;
@@ -133,6 +134,7 @@ input {
     position: absolute;
     top: 0;
     left: 0;
+	background-color:transparent!important;
 }
 #callAjaxForm {
 	width: 80%;
