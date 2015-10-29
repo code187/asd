@@ -24,8 +24,8 @@
 /******** BUTTON *********/
 
 #druga .box{
-	width: 300px;
-    height: 300px;
+	width: 100px;
+    height: 100px;
   border-top:2px solid #fff;
   border-radius:50%;
   margin:50px auto 50px;
@@ -42,8 +42,8 @@
   position:relative;
 }
 #druga .box:active{
-  width:300px;
-  height:300px;
+  width:100px;
+  height:100px;
 	border-radius:50%;
   border-top:none;
   border:2px solid #BAB7AE;
@@ -85,7 +85,7 @@
   width:15px;
   border-radius:50%;
   background: linear-gradient(#AEADAA,#BAB7AE);
-  margin:137px auto;
+  margin:43px auto;
 }
 
 
