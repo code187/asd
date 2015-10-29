@@ -1,5 +1,12 @@
 
-
+body{
+  margin:20px;
+  background: #ECE8DF;
+  background: url(http://subtlepatterns.com/patterns/extra_clean_paper.png) repeat;
+  border: 1px dashed #9B999A;
+  border-radius:5px;
+	font-family: "serif";
+}
 
 .app {
     /*background:url(../img/logo.png) no-repeat center top;  170px x 200px */
@@ -77,15 +84,7 @@
 	box-shadow: inset 1px 0 1px 0px #D9D9D9; 
 }
 
-#druga p, #druga p a{
-  text-shadow: 1px 1px 1px white;
-  color:#7E7E7E;
-  text-align:center;
-  font-size:18px;
-  line-height:2;
-  text-decoration:none;
-  margin-bottom:30px;
-}
+
 #druga .box span{
   display:inline-block;
   box-shadow: 
