@@ -164,9 +164,17 @@ input {
 .upis {
 	background-color:green;
 	color:#fff;
+	padding:2px;
+	font-size:14px;
+	width:100%;
 }
 .koristen {
 	background-color:red;
 	color:#fff;
-	padding:2px; 
+	padding:2px;
+	font-size:14px;
+	width:100%;
+}
+#info {
+	margin-bottom:25px;
 }
