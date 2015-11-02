@@ -7,7 +7,7 @@
 		<script src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
 		
 		 <link rel="stylesheet" type="text/css" href="css/main.css" />
-        <title>ASD Scaning app</title>
+        <title>ASD Ticket-App</title>
     </head>
     <body onload="funkcija()">
 	<script>
@@ -52,21 +52,21 @@ if(isNaN(data)){
     </script>
 	<div data-role="page" data-theme="b" id="callAjaxPage">
 		<div data-role="header">
-            <p>ASD Online Marketing</p>
+            <p>ASD Ticket-App</p>
         </div>
 		<div data-role="content">
 			<div class="app">
 				<img src="img/logo.png" />
 				<form id="callAjaxForm">
                 <div data-role="fieldcontain">
-                    <label for="firstName">Korisničko ime</label>
+                    <label for="firstName">Benutzername</label>
                     <input type="text" name="firstName" id="firstName" value=""  />
  
-                    <label for="lastName">Lozinka</label>
+                    <label for="lastName">Passwort</label>
                     <input type="password" name="lastName" id="lastName" value=""  />
                     <h3 id="notification"></h3>
-                    <h4><input type="checkbox" id="save" value="Zapamti">Zapamti prijavu<br /></h4>
-                    <button data-theme="b" id="submit" type="submit" onclick="myFunction()" value="Prijava">Prijava</button>
+                    <h4><input type="checkbox" id="save" value="Zapamti">Login merken<br /></h4>
+                    <button data-theme="b" id="submit" type="submit" onclick="myFunction()" value="Prijava">Anmelden</button>
                 </div>
             </form>
 				
@@ -74,7 +74,7 @@ if(isNaN(data)){
 			</div>
 		</div>
 		<div data-role="footer">
-             <p>&reg; Sva prava pridržana <a href="http://ofir.hr/">Ofir d.o.o</a></p>
+             <p>&reg; Copyright - Alle Rechte by <a href="http://asd-online-marketing.de">ASD Online Marketing UG</a></p>
         </div>
 	</div>
 	

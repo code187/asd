@@ -161,3 +161,11 @@ input {
     width: 50%;
 }
 
+.upis {
+	background-color:green;
+	color:#fff;
+}
+.koristen {
+	background-color:red;
+	color:#fff;
+}
