@@ -178,7 +178,10 @@ input {
 	display:block;
 }
 .footer {
-	margin-top:25px;
+	position:relative;
+	margin-top:50px;
+	left: 0px;
+    width: 100%;
 }
 #info {
 	margin-bottom:10px;
