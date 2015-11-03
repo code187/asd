@@ -166,7 +166,7 @@ input {
 	color:#fff;
 	padding:5px;
 	font-size:14px;
-	width:100%;
+	width:90%;
 	display:block;
 }
 .koristen {
@@ -174,11 +174,12 @@ input {
 	color:#fff;
 	padding:5px;
 	font-size:14px;
-	width:100%;
+	width:90%;
 	display:block;
 }
+.footer {
+	margin-top:25px;
+}
 #info {
-	margin-bottom:25px;
-	width:100%;
-	border-radius:5px;
+	margin-bottom:10px;
 }
