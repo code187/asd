@@ -143,6 +143,10 @@ input {
     top: 0;
     left: 0;
 	background-color:transparent!important;
+	background: url("../img/scann.png");
+    background-position: 50% 50%;
+    background-size: 77%;
+    background-repeat: no-repeat;
 }
 #callAjaxForm {
 	width: 80%;
