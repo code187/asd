@@ -38,7 +38,7 @@ if(isNaN(data)){
   
                 $.ajax({
                     type: "POST",
-                    url: "http://www.ofir.hr/asd/callajax.php",
+                    url: "http://tickets.ruhrgebietaktuell.de/callajax.php",
                     cache: false,
                     data: formData,
                     success: onSuccess,
@@ -109,7 +109,7 @@ $("#btnLogin").click(function()
 {
     $( "#myDate" ).text( "Reached Here" );
   $.ajax({
-url:"https://ofir.hr/asd/wp-login.php",
+url:"https://ruhrgebietaktuell.de/wp-login.php",
 type:"GET",
 dataType:"json",
 data:{username:"username",password:"password"},
